@@ -51,7 +51,7 @@ async function codegen() {
           .replace(/^lib\//, "")
           .replace(/\W/g, "_")
           .replace(/^_*/, "")}`;
-        const path = `'${is_project ? "" : `package/${packageName}/`}${str}';`;
+        const path = `'${is_project ? "" : `packages/${packageName}/`}${str}';`;
         return `  static const ${shift} = ${path}`;
       }
 
