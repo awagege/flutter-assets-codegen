@@ -1,8 +1,9 @@
 {
 	"name": "flutter-assets-codegen",
-	"displayName": "flutter-assets-codegen",
-	"description": "",
+	"displayName": "Flutter Assets Codegen",
+	"description": "快捷生成Flutter Asset Model文件",
 	"version": "0.0.1",
+	"publisher": "Kaiqun",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
@@ -22,7 +23,7 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "yarn run compile",
+		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"lint": "eslint src --ext ts",
 		"watch": "tsc -watch -p ./",
